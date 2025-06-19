@@ -52,7 +52,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[toLower(parameters('ODLID'))]"
+          "domainNameLabel": "[concat('lab-', toLower(parameters('ODLID')))]"
         }
       },
       "sku": {
