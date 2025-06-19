@@ -52,8 +52,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[concat('lab-', toLower(parameters('ODLID')))]"
-        }
+"domainNameLabel": "[concat('lab-', toLower(parameters('ODLID')), '-', uniqueString(resourceGroup().id))]"        }
       },
       "sku": {
         "name": "Basic"
