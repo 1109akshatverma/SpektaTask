@@ -1,18 +1,18 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "vmName": {
-      "value": "winVM"
-    },
     "adminUsername": {
       "value": "azureuser"
     },
     "adminPassword": {
-      "value": "Akshat@12345"
+      "value": "GEN-PASSWORD"
     },
-    "location": {
-      "value": "eastus"
+    "ODLID": {
+      "value": "GET-ODL-ID"
+    },
+    "DeploymentID": {
+      "value": "GET-DEPLOYMENT-ID"
     }
   }
 }
