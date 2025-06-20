@@ -136,7 +136,7 @@
         "typeHandlerVersion": "1.10",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "commandToExecute": "powershell -ExecutionPolicy Unrestricted -Command \"$chromeInstaller = '$env:TEMP\\ChromeSetup.exe'; Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile $chromeInstaller -UseBasicParsing; Start-Process -FilePath $chromeInstaller -ArgumentList '/silent /install' -Wait\""
+          "commandToExecute": "powershell -ExecutionPolicy Unrestricted -Command \"$chromeInstaller = [System.IO.Path]::Combine($env:TEMP, 'ChromeSetup.exe'); Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile $chromeInstaller -UseBasicParsing; Start-Process -FilePath $chromeInstaller -ArgumentList '/silent /install' -Wait\""
         }
       }
     }
